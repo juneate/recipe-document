@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,900;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Coda:wght@800&family=Heebo:wght@900&family=Open+Sans:wght@800&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 /* Combine these ^^ */
 /* Organize this doc */
 /* Spell-check */
+
+
+	/* font-family: 'Chivo', sans-serif;
+	font-family: 'Coda', cursive;
+	font-family: 'Heebo', sans-serif;
+	font-family: 'Open Sans', sans-serif; */
+
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -46,6 +54,7 @@ body {
 }
 a {
 	color: var(--col);
+	font-weight: 700;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Exo', Arial, Helvetica, sans-serif;
@@ -67,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .recipe-intro {
-	background-color: #666979;
+	background-color: #676975;
 	background-blend-mode: multiply;
 
 	/* Explain this as a common set, but don't get into detail about each */
@@ -100,10 +109,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 0.8rem;
 	font-weight: 700;
 }
+
+
 .recipe-name {
 	font-family: 'Exo', Arial, Helvetica, sans-serif;
 	/* text-transform: uppercase; */
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 900;
 	line-height: 1;
 	margin: 1rem 0;
@@ -197,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 	} */
 	.recipe-intro {
 		height: auto;
-		padding-bottom: 4rem;
+		padding: 1rem 2rem 4rem;
 	}
 
 	.recipe-menu {
@@ -206,6 +217,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.recipe-lead {
 		width: 70%;
+	}
+	.recipe-name {
+		font-size: 3.5rem;
 	}
 
 	.recipe-stats {
