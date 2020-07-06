@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- <meta charset="utf-8"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<title></title>
+		<!-- <link rel="icon" href="img/favicon.svg" type="image/svg+xml"> -->
+		<!-- <link rel="stylesheet" href="css/reset.css"> -->
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+
+<!-- 
+	https://www.gimmesomeoven.com/baked-chicken-breast/
+	https://www.rbcventures.ca/en/ventures
+ -->
+
+		<!-- 
+			Baguette
+				Story
+					jump to recipe (a)
+					link to each instruction heading (a)
+
+				Ingredients
+					Definition list? rather than strong to lead each step?
+
+				Instructions
+					Mixing
+					Folding
+					Proofing
+					Baking
+
+				Results
+
+
+			Other recipes (aside)
+
+			Rating, review, etc
+		 -->
+
+
+		<!-- RECORD
+			- Outline this all in the master document, so he knows how to transition in/out
+			- Record information reads on one track (scripted)
+			- Record coding reads on another (bullet points)
+		
+			-->
+	<article class="recipe">
+		<!-- Important to generalize the name, don't make it more specific -->
+
+		<header class="recipe-intro">
+			<div class="container">
+				<!-- <nav>
+					<ul class="recipe-menu">
+						<li class="menu-item"><a href="#story" class="menu-item-link">Story</a></li>
+						<li class="menu-item"><a href="#ingredients" class="menu-item-link">Ingredients</a></li>
+						<li class="menu-item"><a href="#equipment" class="menu-item-link">Equipment</a></li>
+						<li class="menu-item"><a href="#instructions" class="menu-item-link">Instructions</a></li>
+						<li class="menu-item"><a href="#results" class="menu-item-link">Results</a></li>
+					</ul>
+				</nav> -->
+				<div class="recipe-lead ">
+					<span class="recipe-category">Baking</span>
+					<h1 class="recipe-name">Delicious No-Kneed Baguettes</h1>
+					<p class="recipe-desc">Make three <strong>fluffy and delicious baguettes</strong>, using a <em>simple</em> <a href="#instructions">folding technique</a>, instead of labor-intensive kneading.</p>
+				</div>
+				<ul class="recipe-stats "> <!-- definition list? -->
+					<!-- Flex this, show width vs stretch vs ?? -->
+					<li>Active time <span class="stat-value">40 mins</span></li>
+					<li>Total time <span class="stat-value">3 hrs</span></li>
+					<li>Calories <span class="stat-value">1670</span></li>
+					<li>Skill level <span class="stat-value">Medium</span></li>
+					<!-- <li>Review <span class="stat-value">4.7 / 5</span></li> -->
+				</ul>
+			</div>
+		</header>
+		
+
+		<main class="main-content container" id="story"> <!-- Show selectors: .recipe-content > section -->
+			<nav class="content-region navigation">
+				<ul class="recipe-menu">
+					<li class="menu-item"><a href="#story" class="menu-item-link">Story</a></li>
+					<li class="menu-item"><a href="#ingredients" class="menu-item-link">Ingredients</a></li>
+					<li class="menu-item"><a href="#equipment" class="menu-item-link">Equipment</a></li>
+					<li class="menu-item"><a href="#instructions" class="menu-item-link">Instructions</a></li>
+					<!-- <li class="menu-item"><a href="#schedule" class="menu-item-link">Schedule</a></li> -->
+					<li class="menu-item"><a href="#results" class="menu-item-link">Results</a></li>
+				</ul>
+			</nav>
+			<section class="content-region">
+				<h2 class="section-heading story">Story</h2>
+				<!-- <p>Skip directly to the <a href="#ingredients">recipe</a>.</p> -->
+				<p class="upper-first">Lorem ipsum dolor sit amet adipisicing elit. Quod corporis rem vitae sunt, enim libero. Quaerat iusto ut <em>emphasize this point</em> officia eveniet, nemo aut molestias veritatis eaque, molestiae quia at.</p>
+				<p>Lorem ipsum dolor sit amet, <a href="#">a test link</a> elit. Modi repellendus dolor, veritatis nobis asperiores hic ex accusantium quas laborum explicabo incidunt consectetur nemo soluta iure? Explicabo at fugiat totam consectetur!</p>
+				<p>Lorem ipsum dolor sit amet consectetur <strong>something important</strong> elit. Officia recusandae at officiis illum totam reiciendis ad asperiores, quaerat ipsum, molestias quo obcaecati molestiae. Fuga ut quasi sit eveniet voluptates. Distinctio.</p>
+				<!--  -->
+			</section>
+
+			<div class="sidebar">
+				<section class="content-region ingredients" id="ingredients"><!-- multiple classes -->
+					<h2 class="section-heading">Ingredients</h2>
+					<!-- weight or volume -->
+					<!-- grams or ounces -->
+					<ul class="item-list">
+						<li>500g <strong>bread flour</strong></li>
+						<li>400g <strong>cool water</strong></li>
+						<li>10g <strong>salt</strong></li>
+						<li>7.5g <strong>yeast</strong></li>
+						<li><strong>Extra flour</strong> (for dusting)</li>
+					</ul>
+				</section>
+
+				<section class="content-region equipment" id="equipment">
+					<h2 class="section-heading">Equipment</h2>
+					<ul class="item-list">
+						<li>Large bowl</li>
+						<li>Plastic wrap</li>
+						<li>Baking sheet or stone</li>
+						<li>Bench scrapper</li>
+						<li>Thermometer</li>
+					</ul>
+					<!-- <footer>
+						<p>Optional items in blue</p>
+					</footer> -->
+				</section>
+			</div>
+
+			<section class="content-region instructions" id="instructions">
+				<h2 class="section-heading">Instructions</h2>
+				<ol class="item-list">
+					<li>
+						<h3>Mixing</h3>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestias voluptate placeat ad, neque officiis illum suscipit quas doloribus, non fugiat distinctio inventore cum nulla, saepe eligendi odit. Assumenda, corrupti.</p>
+						<p><img src="img/8.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+					</li>
+					<li>
+						<h3>Folding</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam quia aliquam commodi iste doloremque. Eius eaque consequatur id facere voluptatibus quibusdam obcaecati dicta exercitationem excepturi vel ut, saepe commodi illum.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum placeat rem in sed saepe officiis aperiam eos possimus aliquam optio asperiores amet nemo ab vitae, molestias assumenda. Natus, est.</p>
+						<p><img src="img/6.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+					</li>
+					<li>
+						<h3>Proofing</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ducimus praesentium libero ullam voluptas nam! Enim exercitationem velit officiis laborum. Error nihil fugiat deserunt sit reiciendis est quo laborum quidem.</p>
+						<p><img src="img/4.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+					</li>
+					<li>
+						<h3>Baking</h3>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestias voluptate placeat ad, neque officiis illum suscipit quas doloribus, non fugiat distinctio inventore cum nulla, saepe eligendi odit. Assumenda, corrupti.</p>
+						<p><img src="img/9.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+					</li>
+				</ol>
+			</section>
+	
+			<!-- <section class="content-region schedule" id="schedule">
+				<h2 class="section-heading">Schedule</h2>
+				<dl>
+					<li></li>
+				</dl>
+			</section> -->
+	
+			<section class="content-region results" id="results">
+				<h2 class="section-heading">Results</h2>
+				<p>Talk about how it should turn out, some blah blah blah at the end so everyone feels good</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique illum incidunt aliquam exercitationem distinctio facere? Impedit amet est minus, laboriosam aperiam, modi provident sint sed quis quas beatae eos!</p>
+				<p><img src="img/10.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda minima nisi reprehenderit. Architecto, corporis corrupti perferendis consequatur neque quisquam, nulla impedit amet maiores in quaerat facere nam possimus consectetur dolorum!</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus amet delectus fugiat repellat neque magnam facere iusto recusandae voluptatibus, sed, deserunt eos odit inventore et beatae facilis! Corporis, debitis placeat.</p>
+			</section>
+
+			<!-- <footer> -->
+				<!-- Style like a button? -->
+				<!-- <a href="#top">To the top</a> -->
+			<!-- </footer> -->
+		</main>
+
+
+	</article>
+
+		<!-- date, categories, etc -->
+	
+
+
+	
+
+		 
+
+
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
