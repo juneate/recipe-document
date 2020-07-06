@@ -1,0 +1,22 @@
+{
+	// "editor.lineNumbers": "off",
+	// "editor.folding": false,
+	"editor.glyphMargin": false,
+	// "editor.renderIndentGuides": false,
+	// "workbench.colorTheme": "Night Owl Light (No Italics)",
+	// "workbench.colorCustomizations": {
+	// 	"activityBar.background": "#346a69",
+	// 	"activityBar.activeBackground": "#00000080",
+	// 	"titleBar.activeBackground": "#346a69",
+	// 	"titleBar.inactiveBackground": "#668e8d",
+	// 	"statusBar.background": "#346a69",
+	// 	"statusBar.border": "#346a69"
+	// 	// "activityBar.activeBackground": "#103736",
+	// 	// "activityBar.border": "#ff0000"
+	// },
+	"[javascript]": { "editor.glyphMargin": true },
+	"[html]": { "editor.glyphMargin": true },
+	"[css]": { "editor.glyphMargin": true },
+
+	// "workbench.colorCustomizations": null
+}
