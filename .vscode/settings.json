@@ -16,7 +16,10 @@
 	// },
 	"[javascript]": { "editor.glyphMargin": true },
 	"[html]": { "editor.glyphMargin": true },
-	"[css]": { "editor.glyphMargin": true },
+	"[css]": {
+		"editor.glyphMargin": true
+	},
+	"liveServer.settings.port": 3002,
 
 	// "workbench.colorCustomizations": null
 }

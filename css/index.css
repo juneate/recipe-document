@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Coda:wght@800&family=Heebo:wght@900&family=Open+Sans:wght@800&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 /* Combine these ^^ */
@@ -17,8 +18,11 @@
 }
 :root {
 	/* Colours */
-	--col: #d9b035;
+	/* --col: #d9b035; */
 	/* ffc107 */
+
+	--col-a: #FFBC48;
+	--col-a-on: #
 }
 /* ::selection { background-color: var(--col); color: #111; }
 a::selection { color: #111; } */
@@ -57,7 +61,7 @@ a {
 	font-weight: 700;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Exo', Arial, Helvetica, sans-serif;
+	font-family: 'Fira Sans', 'Exo', Arial, Helvetica, sans-serif;
 	line-height: 1;
 }
 
@@ -112,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .recipe-name {
-	font-family: 'Exo', Arial, Helvetica, sans-serif;
+	font-family: 'Fira Sans', 'Exo', Arial, Helvetica, sans-serif;
 	/* text-transform: uppercase; */
 	font-size: 2.5rem;
 	font-weight: 900;
@@ -152,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 	list-style: none;
 	padding: 0;
 	/* display: flex; */
-	font-family: 'Exo', Arial, Helvetica, sans-serif;
+	font-family: 'Fira Sans', 'Fira Sans', 'Exo', Arial, Helvetica, sans-serif;
 }
 .menu-item {
 	margin-right: 1rem;
@@ -174,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 	/* text-align: center; */
 	margin: 2rem 0;
 	text-transform: uppercase;
-	font-family: 'Exo', Arial, Helvetica, sans-serif;
+	font-family: 'Fira Sans', 'Exo', Arial, Helvetica, sans-serif;
 	/* font-size: 0.7rem; */
 }
 /* .recipe-stats li {
