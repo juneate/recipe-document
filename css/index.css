@@ -22,6 +22,7 @@
 	#19a85c
 	#11a694
 	#b074c7
+	#5b49f6
 	*/
 	--col-a: #ffbc48;
 	--col-a-on: #0e0e0e; 
@@ -57,12 +58,19 @@ body {
 a {
 	color: var(--col-a);
 	/* color: #993B00; */
+	/* color: #df783d; */ /* Better */
 	font-weight: 700;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-b); /* Start with base set, add "Open Sans" ahead of it */
 	line-height: 1;
 	margin: 1rem 0;
+}
+blockquote {
+	margin: 0;
+	border-left: 0.25rem solid #ffbc48;
+	padding-left: 0.75rem;
+	font-style: italic;
 }
 
 .img-fluid {
@@ -79,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-blend-mode: multiply;
 
 	/* Explain this as a common set, but don't get into detail about each */
-	background-image: url('../img/7.jpeg');
+	background-image: url('../img/ingredients.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -103,7 +111,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-
 .recipe-name {
 	font-family: var(--font-b);
 	font-size: 2.5rem;
@@ -119,9 +126,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-list {
-	padding-left: 1.125em;
+	padding-left: 1.125rem;
 }
 
+.highlight {
+  background-color: var(--col-a);
+}
 /* unit, area, segment, section, sub, branch, region */
 
 
@@ -138,15 +148,11 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: var(--col-b);
 	margin-bottom: 1rem;
 }
-.recipe-menu {
-	list-style: none;
-	padding: 0;
+.main-menu {
 	/* display: flex; */
 	font-family: var(--font-b);
 }
-.menu-item {
-	margin-right: 1rem;
-}
+
 .menu-item-link {
 	text-decoration: none;
 	/* anchor MUST be directly styled, pr */
@@ -157,15 +163,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .recipe-stats {
-	list-style: none;
-	padding: 0;
 	margin: 2rem 0;
 	text-transform: uppercase;
 	font-family: var(--font-b);
 	/* font-size: 0.7rem; */
 }
 
-.stat-value {
+/* Common styling */
+.no-markers {
+	list-style-type: none;
+	padding: 0;
+}
+
+.highlight {
 	background-color: var(--col-a);
 	color: #111;
 	padding: 0 0.25rem;
@@ -175,6 +185,23 @@ h1, h2, h3, h4, h5, h6 {
 .main-content .content-region:last-of-type p:last-of-type::after {
 	content: " ❤️";
 }
+
+.critical {
+	background-color: var(--col-a);
+	color: #fff
+}
+
+.schedule-times {
+	border-collapse: collapse;
+}
+.cell {
+ border: 1px solid black;
+ padding: 0.5em;
+}
+.schedule-caption {
+	caption-side: bottom;
+}
+
 
 @media screen and (min-width: 40rem)  {
 	html {
@@ -188,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 1rem 2rem 4rem;
 	}
 
-	.recipe-menu {
+	.main-menu {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -221,9 +248,9 @@ h1, h2, h3, h4, h5, h6 {
 		padding-left: 15rem;
 		position: relative;
 		max-width: 50rem;
-		margin: 1em auto; /*replaces above */
+		margin: 1rem auto; /*replaces above */
 		margin-top: -3rem;
-		box-shadow: 0 0 2em rgba(0,0,0,0.5);
+		box-shadow: 0 0 2rem rgba(0,0,0,0.5);
 	}
 	.content-region { 
 		padding: 1rem 2rem;
@@ -234,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 		left: 0;
 		top: 0;
 		width: 15rem;
-		padding: 1em 0;
+		padding: 1rem 0;
 		min-height: 100%;
 		background-color: var(--col-a);
 		/* color: #000; */

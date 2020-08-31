@@ -1,9 +1,13 @@
+
+
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<!-- <meta charset="utf-8"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title></title>
+		<title>Delicious No-Knead Baguettes</title>
+		<meta name="description" content="Make three fluffy and delicious baguettes, using a simple folding technique, instead of labor-intensive kneading.">
 		<!-- <link rel="icon" href="img/favicon.svg" type="image/svg+xml"> -->
 		<!-- <link rel="stylesheet" href="css/reset.css"> -->
 		<link rel="stylesheet" href="css/index.css">
@@ -45,7 +49,7 @@
 			- Record coding reads on another (bullet points)
 		
 			-->
-	<article class="recipe">
+	<!-- <article class="recipe"> -->
 		<!-- Important to generalize the name, don't make it more specific -->
 
 		<header class="recipe-intro">
@@ -59,41 +63,42 @@
 						<li class="menu-item"><a href="#results" class="menu-item-link">Results</a></li>
 					</ul>
 				</nav> -->
-				<div class="recipe-lead ">
+				<div class="recipe-lead">
 					<span class="recipe-category">Baking</span>
 					<h1 class="recipe-name">Delicious No-Knead Baguettes</h1>
 					<p class="recipe-desc">Make three <strong>fluffy and delicious baguettes</strong>, using a <em>simple</em> <a href="#instructions">folding technique</a>, instead of labor-intensive kneading.</p>
 				</div>
-				<ul class="recipe-stats "> <!-- definition list? -->
+				<ul class="recipe-stats no-markers"> <!-- definition list? -->
 					<!-- Flex this, show width vs stretch vs ?? -->
-					<li>Active time <span class="stat-value">40 mins</span></li>
-					<li>Total time <span class="stat-value">3 hrs</span></li>
-					<li>Calories <span class="stat-value">1670</span></li>
-					<li>Skill level <span class="stat-value">Medium</span></li>
-					<!-- <li>Review <span class="stat-value">4.7 / 5</span></li> -->
+					<li>Active time <span class="highlight stat-value">40 <abbr title="Minutes">mins</abbr></span></li>
+					<li>Total time <span class="highlight stat-value">3 <abbr title="Hours">hrs</abbr></span></li>
+					<li>Calories <span class="highlight stat-value">1670</span></li>
+					<li>Skill level <span class="highlight stat-value">Medium</span></li>
 				</ul>
 			</div>
 		</header>
-		
 
-		<main class="main-content container" id="story"> <!-- Show selectors: .recipe-content > section -->
-			<nav class="content-region navigation">
-				<ul class="recipe-menu">
-					<li class="menu-item"><a href="#story" class="menu-item-link">Story</a></li>
-					<li class="menu-item"><a href="#ingredients" class="menu-item-link">Ingredients</a></li>
-					<li class="menu-item"><a href="#equipment" class="menu-item-link">Equipment</a></li>
-					<li class="menu-item"><a href="#process" class="menu-item-link">Process</a></li>
-					<li class="menu-item"><a href="#schedule" class="menu-item-link">Schedule</a></li>
-					<li class="menu-item"><a href="#results" class="menu-item-link">Results</a></li>
+		<main class="main-content container" id="story">             <!-- Show selectors: .recipe-content > section -->
+			<nav class="content-region navigation" aria-label="Recipe Navigation">
+				<ul class="main-menu no-markers">
+					<li><a href="#story" class="menu-item-link">Story</a></li>
+					<li><a href="#ingredients" class="menu-item-link">Ingredients</a></li>
+					<li><a href="#equipment" class="menu-item-link">Equipment</a></li>
+					<li><a href="#process" class="menu-item-link">Process</a></li>
+					<li><a href="#schedule" class="menu-item-link">Schedule</a></li>
+					<li><a href="#results" class="menu-item-link">Results</a></li>
 				</ul>
 			</nav>
+
 			<section class="content-region">
 				<h2 class="section-heading story">Story</h2>
-				<!-- <p>Skip directly to the <a href="#ingredients">recipe</a>.</p> -->
 				<p class="upper-first">Lorem ipsum dolor sit amet adipisicing elit. Quod corporis rem vitae sunt, enim libero. Quaerat iusto ut <em>emphasize this point</em> officia eveniet, nemo aut molestias veritatis eaque, molestiae quia at.</p>
 				<p>Lorem ipsum dolor sit amet, <a href="#">a test link</a> elit. Modi repellendus dolor, veritatis nobis asperiores hic ex accusantium quas laborum explicabo incidunt consectetur nemo soluta iure? Explicabo at fugiat totam consectetur!</p>
+				<blockquote>
+					<p>Peace goes into the making of a poem as flour goes into the making of bread.</p>
+					<footer>Pablo Neruda</footer>
+				</blockquote>
 				<p>Lorem ipsum dolor sit amet consectetur <strong>something important</strong> elit. Officia recusandae at officiis illum totam reiciendis ad asperiores, quaerat ipsum, molestias quo obcaecati molestiae. Fuga ut quasi sit eveniet voluptates. Distinctio.</p>
-				<!--  -->
 			</section>
 
 			<div class="sidebar">
@@ -102,11 +107,11 @@
 					<!-- weight or volume -->
 					<!-- grams or ounces -->
 					<ul class="item-list">
-						<li>500g <strong>bread flour</strong></li>
-						<li>400g <strong>cool water</strong></li>
-						<li>10g <strong>salt</strong></li>
-						<li>7.5g <strong>yeast</strong></li>
-						<li><strong>Extra flour</strong> (for dusting)</li>
+						<li><b>500 g</b> bread flour</li>
+						<li><b>400 g</b> cool water</li>
+						<li><b>10 g</b> salt</li>
+						<li><b>7.5 g</b> yeast</li>
+						<li>Extra flour (for dusting)</li>
 					</ul>
 				</section>
 
@@ -127,27 +132,30 @@
 
 			<section class="content-region process" id="process">
 				<h2 class="section-heading">Process</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat expedita, earum ab eos fuga quidem repellendus, rerum quia suscipit, consectetur pariatur amet aliquid. Qui cum, possimus magni at expedita ad!</p>
 				<ol class="item-list">
 					<li>
 						<h3>Mixing</h3>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestias voluptate placeat ad, neque officiis illum suscipit quas doloribus, non fugiat distinctio inventore cum nulla, saepe eligendi odit. Assumenda, corrupti.</p>
-						<p><img src="img/8.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<p><img src="img/mixing-ingredients.jpg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
 					</li>
 					<li>
 						<h3>Folding</h3>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam quia aliquam commodi iste doloremque. Eius eaque consequatur id facere voluptatibus quibusdam obcaecati dicta exercitationem excepturi vel ut, saepe commodi illum.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum placeat rem in sed saepe officiis aperiam eos possimus aliquam optio asperiores amet nemo ab vitae, molestias assumenda. Natus, est.</p>
-						<p><img src="img/6.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<p>Be sure to <strong class="highlight">let your dough sit for about 20-30 minutes between folds</strong> to ensure the gluten structure has a chance to develop before being disturbed.</p>
+						<p><img src="img/folding-dough.jpg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<!-- If these end up as figures, use the # to connect a reference from the paragraph -->
 					</li>
 					<li>
 						<h3>Proofing</h3>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ducimus praesentium libero ullam voluptas nam! Enim exercitationem velit officiis laborum. Error nihil fugiat deserunt sit reiciendis est quo laborum quidem.</p>
-						<p><img src="img/4.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<p><img src="img/proofing.jpg" alt="PUT AN ALT HERE" class="img-fluid"></p>
 					</li>
 					<li>
 						<h3>Baking</h3>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestias voluptate placeat ad, neque officiis illum suscipit quas doloribus, non fugiat distinctio inventore cum nulla, saepe eligendi odit. Assumenda, corrupti.</p>
-						<p><img src="img/9.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<p><img src="img/baked-baguettes.jpg" alt="PUT AN ALT HERE" class="img-fluid"></p>
 					</li>
 				</ol>
 			</section>
@@ -155,19 +163,49 @@
 			<section class="content-region schedule" id="schedule">
 				<h2 class="section-heading">Schedule</h2>
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio mollitia fugiat incidunt laudantium ipsam ut hic laborum aut delectus minima molestiae quibusdam sapiente sit et dolorem, eligendi, voluptatibus iusto. Nam?</p>
-				<table>
-					<thead>
-						<tr>
-							<th colspan="2">The table header</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>The table body</td>
-							<td>with two columns</td>
-						</tr>
-					</tbody>
-				</table>
+				
+				<table class="schedule-times">
+					<tr>
+						<th class="cell" colspan="2">Time</th>
+						<th class="cell" rowspan="2">Task</th>
+					</tr>
+					<tr>
+						 <th class="cell">Start</th>
+						 <th class="cell">Duration</th>
+					</tr>
+					<tr>
+						 <td class="cell">0:00</td>
+						 <td class="cell">(20 min)</td>
+						 <td class="cell">Mix ingredients</td>
+					</tr>
+					<tr>
+						 <td class="cell">0:20</td>
+						 <td class="cell">(100 min)</td>
+						 <td class="cell">Bulk rise</td>
+					</tr>
+					<tr>
+						 <td class="cell">2:00</td>
+						 <td class="cell">(30 min)</td>
+						 <td class="cell">Fold & rest</td>
+					</tr>
+					<tr>
+						 <td class="cell">2:30</td>
+						 <td class="cell">(30 min)</td>
+						 <td class="cell">Fold & rest</td>
+					</tr>
+					<tr>
+						 <td class="cell">3:00</td>
+						 <td class="cell">(30 min)</td>
+						 <td class="cell">Proof</td>
+					</tr>
+					<tr>
+						 <td class="cell">3:30</td>
+						 <td class="cell">(30 min)</td>
+						 <td class="cell">Bake</td>
+					</tr>
+					<caption class="schedule-caption">Sample baking schedule</caption>
+					<!-- Missing finish time! -->
+			 </table>
 			
 			</section>
 	
@@ -175,7 +213,7 @@
 				<h2 class="section-heading">Results</h2>
 				<p>Talk about how it should turn out, some blah blah blah at the end so everyone feels good</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique illum incidunt aliquam exercitationem distinctio facere? Impedit amet est minus, laboriosam aperiam, modi provident sint sed quis quas beatae eos!</p>
-				<p><img src="img/10.jpeg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+				<p><img src="img/ready-to-eat.jpg" alt="PUT AN ALT HERE" class="img-fluid"></p>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda minima nisi reprehenderit. Architecto, corporis corrupti perferendis consequatur neque quisquam, nulla impedit amet maiores in quaerat facere nam possimus consectetur dolorum!</p>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus amet delectus fugiat repellat neque magnam facere iusto recusandae voluptatibus, sed, deserunt eos odit inventore et beatae facilis! Corporis, debitis placeat.</p>
 			</section>
@@ -187,7 +225,7 @@
 		</main>
 
 
-	</article>
+	<!-- </article> -->
 
 		<!-- date, categories, etc -->
 	
@@ -195,7 +233,6 @@
 
 	
 
-		 
 
 
 

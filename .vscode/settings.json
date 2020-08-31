@@ -1,7 +1,7 @@
 {
 	// "editor.lineNumbers": "off",
 	// "editor.folding": false,
-	"editor.glyphMargin": false,
+	"editor.glyphMargin": true,
 	// "editor.renderIndentGuides": false,
 	// "workbench.colorTheme": "Night Owl Light (No Italics)",
 	// "workbench.colorCustomizations": {
@@ -14,11 +14,11 @@
 	// 	// "activityBar.activeBackground": "#103736",
 	// 	// "activityBar.border": "#ff0000"
 	// },
-	"[javascript]": { "editor.glyphMargin": true },
-	"[html]": { "editor.glyphMargin": true },
-	"[css]": {
-		"editor.glyphMargin": true
-	},
+	// "[javascript]": { "editor.glyphMargin": true },
+	// "[html]": { "editor.glyphMargin": true },
+	// "[css]": {
+	// 	"editor.glyphMargin": true
+	// },
 	"liveServer.settings.port": 3002,
 
 	// "workbench.colorCustomizations": null
