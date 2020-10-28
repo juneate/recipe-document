@@ -64,7 +64,7 @@
 					</ul>
 				</nav> -->
 				<div class="recipe-lead">
-					<span class="recipe-category">Baking</span>
+					<span class="recipe-category highlight">Baking</span>
 					<h1 class="recipe-name">Delicious No-Knead Baguettes</h1>
 					<p class="recipe-desc">Make three <strong>fluffy and delicious baguettes</strong>, using a <em>simple</em> <a href="#instructions">folding technique</a>, instead of labor-intensive kneading.</p>
 				</div>
@@ -78,8 +78,8 @@
 			</div>
 		</header>
 
-		<main class="main-content container" id="story">             <!-- Show selectors: .recipe-content > section -->
-			<nav class="content-region navigation" aria-label="Recipe Navigation">
+		<main class="recipe-content container" id="story">             <!-- Show selectors: .recipe-content > section -->
+			<nav class="content-block navigation" aria-label="Recipe Navigation">
 				<ul class="main-menu no-markers">
 					<li><a href="#story" class="menu-item-link">Story</a></li>
 					<li><a href="#ingredients" class="menu-item-link">Ingredients</a></li>
@@ -90,19 +90,27 @@
 				</ul>
 			</nav>
 
-			<section class="content-region">
+			<section class="content-block">
 				<h2 class="section-heading story">Story</h2>
 				<p class="upper-first">Lorem ipsum dolor sit amet adipisicing elit. Quod corporis rem vitae sunt, enim libero. Quaerat iusto ut <em>emphasize this point</em> officia eveniet, nemo aut molestias veritatis eaque, molestiae quia at.</p>
 				<p>Lorem ipsum dolor sit amet, <a href="#">a test link</a> elit. Modi repellendus dolor, veritatis nobis asperiores hic ex accusantium quas laborum explicabo incidunt consectetur nemo soluta iure? Explicabo at fugiat totam consectetur!</p>
-				<blockquote>
+				<blockquote class="quote">
 					<p>Peace goes into the making of a poem as flour goes into the making of bread.</p>
 					<footer>Pablo Neruda</footer>
 				</blockquote>
 				<p>Lorem ipsum dolor sit amet consectetur <strong>something important</strong> elit. Officia recusandae at officiis illum totam reiciendis ad asperiores, quaerat ipsum, molestias quo obcaecati molestiae. Fuga ut quasi sit eveniet voluptates. Distinctio.</p>
+			
+				<figure class="gallery">
+					<img src="img/1.jpeg" alt="Some dough" class="gallery-img shown">
+					<img src="img/2.jpeg" alt="Some dough" class="gallery-img">
+					<img src="img/3.jpeg" alt="Some dough" class="gallery-img">
+					<img src="img/5.jpeg" alt="Some dough" class="gallery-img">
+				</figure>
+			
 			</section>
 
 			<div class="sidebar">
-				<section class="content-region ingredients" id="ingredients"><!-- multiple classes -->
+				<section class="content-block ingredients" id="ingredients"><!-- multiple classes -->
 					<h2 class="section-heading">Ingredients</h2>
 					<!-- weight or volume -->
 					<!-- grams or ounces -->
@@ -115,13 +123,13 @@
 					</ul>
 				</section>
 
-				<section class="content-region equipment" id="equipment">
+				<section class="content-block equipment" id="equipment">
 					<h2 class="section-heading">Equipment</h2>
 					<ul class="item-list">
 						<li>Large bowl</li>
 						<li>Plastic wrap</li>
 						<li>Baking sheet or stone</li>
-						<li>Bench scrapper</li>
+						<li>Bench scraper</li>
 						<li>Thermometer</li>
 					</ul>
 					<!-- <footer>
@@ -130,21 +138,36 @@
 				</section>
 			</div>
 
-			<section class="content-region process" id="process">
+			<section class="content-block process" id="process">
 				<h2 class="section-heading">Process</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat expedita, earum ab eos fuga quidem repellendus, rerum quia suscipit, consectetur pariatur amet aliquid. Qui cum, possimus magni at expedita ad!</p>
 				<ol class="item-list">
 					<li>
 						<h3>Mixing</h3>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestias voluptate placeat ad, neque officiis illum suscipit quas doloribus, non fugiat distinctio inventore cum nulla, saepe eligendi odit. Assumenda, corrupti.</p>
-						<p><img src="img/mixing-ingredients.jpg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<p><img 
+							srcset="img/mixing-ingredients-480w.jpg 480w, img/mixing-ingredients-960w.jpg 960w, img/mixing-ingredients-1920w.jpg 1920w"
+							src="img/mixing-ingredients-480w.jpg" alt="PUT AN ALT HERE" class="img-fluid">
+<!-- 							
+								sizes="(min-width:960px) 575px"
+							sizes="(min-width:960px) 300px, 100%"
+
+
+							<img srcset="elva-fairy-480w.jpg 480w,
+							elva-fairy-800w.jpg 800w"
+			sizes="(max-width: 600px) 480px,
+						 800px"
+			src="elva-fairy-800w.jpg"
+			alt="Elva dressed as a fairy"> -->
+						
+						</p>
 						<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
 					</li>
 					<li>
 						<h3>Folding</h3>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam quia aliquam commodi iste doloremque. Eius eaque consequatur id facere voluptatibus quibusdam obcaecati dicta exercitationem excepturi vel ut, saepe commodi illum.</p>
 						<p>Be sure to <strong class="highlight">let your dough sit for about 20-30 minutes between folds</strong> to ensure the gluten structure has a chance to develop before being disturbed.</p>
-						<p><img src="img/folding-dough.jpg" alt="PUT AN ALT HERE" class="img-fluid"></p>
+						<figure><img src="img/folding-dough.jpg" alt="PUT AN ALT HERE" class="img-fluid"><figcaption>Fold together blah blah blah.</figcaption></figure>
 						<!-- If these end up as figures, use the # to connect a reference from the paragraph -->
 					</li>
 					<li>
@@ -160,7 +183,7 @@
 				</ol>
 			</section>
 	
-			<section class="content-region schedule" id="schedule">
+			<section class="content-block schedule" id="schedule">
 				<h2 class="section-heading">Schedule</h2>
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio mollitia fugiat incidunt laudantium ipsam ut hic laborum aut delectus minima molestiae quibusdam sapiente sit et dolorem, eligendi, voluptatibus iusto. Nam?</p>
 				
@@ -209,7 +232,7 @@
 			
 			</section>
 	
-			<section class="content-region results" id="results">
+			<section class="content-block results" id="results">
 				<h2 class="section-heading">Results</h2>
 				<p>Talk about how it should turn out, some blah blah blah at the end so everyone feels good</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique illum incidunt aliquam exercitationem distinctio facere? Impedit amet est minus, laboriosam aperiam, modi provident sint sed quis quas beatae eos!</p>

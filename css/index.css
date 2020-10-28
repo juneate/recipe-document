@@ -24,6 +24,22 @@
 	#b074c7
 	#5b49f6
 	*/
+
+
+	--col-1: #ffffff;
+	--col-1-on: #222028;
+
+	--col-2: #222028;
+	--col-2-on: #ffffff;
+
+	--col-3: #353a42;
+	--col-3-on: #ffffff;
+
+	--col-4: #ffbc48;
+	--col-4-on: #222028;
+
+
+	
 	--col-a: #ffbc48;
 	--col-a-on: #0e0e0e; 
 
@@ -45,6 +61,7 @@ a::selection { color: #111; } */
 html {
 	scroll-behavior: smooth;
 	min-height: 100%;
+	font: 400 normal 1rem/1.5 var(--font-a); 
 }
 
 body {
@@ -52,8 +69,6 @@ body {
 	background-image: linear-gradient(180deg, var(--col-b) 0%, var(--col-c) 100%);
 	color: var(--col-a-on); /* careful here with the mismatched foreground/background (a vs b) */
 	margin: 0;
-	font-family: var(--font-a); 
-	line-height: 1.5;
 }
 a {
 	color: var(--col-a);
@@ -66,7 +81,30 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 	margin: 1rem 0;
 }
-blockquote {
+figure {
+  margin: 1rem 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Common styling */
+.no-markers {
+	list-style-type: none;
+	padding: 0;
+}
+
+.highlight {
+	background-color: var(--col-a);
+	color: #111;
+	padding: 0 0.25rem;
+	text-shadow: none;
+}
+/* unit, area, segment, section, sub, branch, region */
+
+.quote {
 	margin: 0;
 	border-left: 0.25rem solid #ffbc48;
 	padding-left: 0.75rem;
@@ -87,7 +125,7 @@ blockquote {
 	background-blend-mode: multiply;
 
 	/* Explain this as a common set, but don't get into detail about each */
-	background-image: url('../img/ingredients.jpg');
+	background-image: url('../img/ingredients-480w.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -96,9 +134,11 @@ blockquote {
 	padding: 1rem;
 	position: relative;
 	color: #ffffff;
+
+	text-shadow: 0 0 1rem black;
 }
 
-.main-content {
+.recipe-content {
 	background-color: #ffffff;
 	padding-bottom: 1rem;
 }
@@ -112,11 +152,7 @@ blockquote {
 }
 
 .recipe-name {
-	font-family: var(--font-b);
 	font-size: 2.5rem;
-	font-weight: 900;
-	line-height: 1;
-	margin: 1rem 0;
 }
 .recipe-lead {
 	margin: 2rem 0;
@@ -124,23 +160,18 @@ blockquote {
 .recipe-desc {
 	font-size: 1.25rem;
 }
-
 .item-list {
 	padding-left: 1.125rem;
 }
-
-.highlight {
-  background-color: var(--col-a);
-}
-/* unit, area, segment, section, sub, branch, region */
-
-
-.content-region {  /* .main-content > section { } */
+.content-block {  /* .main-content > section { } */
 	padding: 1rem;
 	/* border-bottom: 1px solid #eee; */
 }
-
-.content-region h3 {
+.cell {
+	border: 1px solid black;
+	padding: 0.5em;
+ }
+.content-block h3 {
 	font-size: 1rem;
 }
 
@@ -169,38 +200,44 @@ blockquote {
 	/* font-size: 0.7rem; */
 }
 
-/* Common styling */
-.no-markers {
-	list-style-type: none;
-	padding: 0;
-}
-
-.highlight {
-	background-color: var(--col-a);
-	color: #111;
-	padding: 0 0.25rem;
-}
-
-
-.main-content .content-region:last-of-type p:last-of-type::after {
+.main-content .content-block:last-of-type p:last-of-type::after {
 	content: " ❤️";
 }
 
-.critical {
-	background-color: var(--col-a);
-	color: #fff
-}
 
 .schedule-times {
 	border-collapse: collapse;
 }
-.cell {
- border: 1px solid black;
- padding: 0.5em;
-}
+
 .schedule-caption {
 	caption-side: bottom;
 }
+
+
+.gallery {
+	position: relative;
+}
+.gallery-img {
+	/* display: none; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 500px;
+	object-fit: cover;
+}
+.gallery-img.shown {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 40rem)  {
@@ -209,9 +246,11 @@ blockquote {
 	}
 }
 @media screen and (min-width: 60rem)  {
-
+	/* html {
+		font-size: 1.3rem;
+	} */
 	.recipe-intro {
-		height: auto;
+		/* height: auto; */
 		padding: 1rem 2rem 4rem;
 	}
 
@@ -244,15 +283,15 @@ blockquote {
 		/* background-color: blue; */
 		/* padding: 0 1rem; */
 	}
-	.main-content {
+	.recipe-content {
 		padding-left: 15rem;
 		position: relative;
-		max-width: 50rem;
+		/* max-width: 50rem; */
 		margin: 1rem auto; /*replaces above */
 		margin-top: -3rem;
 		box-shadow: 0 0 2rem rgba(0,0,0,0.5);
 	}
-	.content-region { 
+	.content-block { 
 		padding: 1rem 2rem;
 	}
 
